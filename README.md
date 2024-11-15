@@ -31,18 +31,7 @@ On pense essayer différentes approches :
 On a différent dataset pour différentes villes, ce qui pourrait nous emmener a réaliser un Bagging.
 De plus, si les approches se trouvent être performantes, nous pourrions réaliser un principe de votes dans nos modèles et donc expérimenter le stacking.
 
+___
 
 ### GitHub ###
 [Accéder au dépôt GitHub](https://github.com/MathisAulagnier/real_estate_prediction/tree/main)
-
-
-
-
-Bagging un modèles par ville
-Interface selection vile, entrée les fetures,
-
-Regression linéaire
-Tree --> MARS
-
-Les missing values, 
-
