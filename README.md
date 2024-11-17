@@ -3,13 +3,18 @@
 
 ## Dataset : 
 Ville américaine : 
-[California House Price](https://www.kaggle.com/datasets/shibumohapatra/house-price)
-[chicago house price](https://www.kaggle.com/datasets/tawfikelmetwally/chicago-house-price)
-[HOUSE PRICE PREDICTION - SEATTLE](https://www.kaggle.com/datasets/samuelcortinhas/house-price-prediction-seattle)
-[Boston House Price](https://www.kaggle.com/datasets/vikrishnan/boston-house-prices)
+
+1. [California House Price](https://www.kaggle.com/datasets/shibumohapatra/house-price)
+
+2. [chicago house price](https://www.kaggle.com/datasets/tawfikelmetwally/chicago-house-price)
+
+3. [HOUSE PRICE PREDICTION - SEATTLE](https://www.kaggle.com/datasets/samuelcortinhas/house-price-prediction-seattle)
+
+4. [Boston House Price](https://www.kaggle.com/datasets/vikrishnan/boston-house-prices)
 
 Autre : 
-[House price prediction - Sydney&Melbourne](https://www.kaggle.com/datasets/shree1992/housedata)
+
+5. [House price prediction - Sydney&Melbourne](https://www.kaggle.com/datasets/shree1992/housedata)
 
 
 ## Interface : 
