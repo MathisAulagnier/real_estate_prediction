@@ -8,6 +8,8 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder, OrdinalEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 
+# Save and Load Models
+import joblib
 
 
 def load_data(df_path):
