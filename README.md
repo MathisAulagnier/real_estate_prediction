@@ -45,8 +45,8 @@ Run data_preprocessing.py to prepare the data, model_training.py to train the mo
 
 Structure du Projet / Project Structure
 
-- data_preprocessing.py : Prétraitement des données. // data_preprocessing.py: Data preprocessing.
-- model_training.py : Entraînement du modèle.  // model_training.py: Model training.
-- prediction.py : Prédiction des prix.  // prediction.py: Price prediction.
+- data_preprocessing.py : Prétraitement des données. / data_preprocessing.py: Data preprocessing.
+- model_training.py : Entraînement du modèle.  / model_training.py: Model training.
+- prediction.py : Prédiction des prix.  / prediction.py: Price prediction.
 
 
