@@ -1,42 +1,55 @@
-# Prédiction des prix de l'immobilier
+# Prédiction des Prix de l'Immobilier / Real Estate Price Prediction
 
+![Python](https://img.shields.io/badge/language-Python-blue.svg)
+![Kaggle Top 2000](https://img.shields.io/badge/Kaggle%20Rank-Top%202000-lightblue.svg)
+![Status](https://img.shields.io/badge/status-Completed-green.svg)
+![GitHub repo size](https://img.shields.io/github/repo-size/MathisAulagnier/real_estate_prediction)
+![Kaggle](https://img.shields.io/badge/dataset-Kaggle-brightgreen)
 
-## Dataset : 
-Ville américaine : 
+## Description du Projet / Project Description
+Ce projet vise à prédire les prix de vente de biens immobiliers en utilisant des techniques avancées de régression, y compris l'ingénierie des caractéristiques et le gradient boosting. Conçu pour la compétition [House Prices - Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques) sur Kaggle, ce projet m'a permis d'atteindre le **Top 2000** des classements.
 
-1. [California House Price](https://www.kaggle.com/datasets/shibumohapatra/house-price)
+This project aims to predict real estate sale prices by applying advanced regression techniques, feature engineering, and gradient boosting. Developed for the [House Prices - Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques) competition on Kaggle, this project helped me achieve a **Top 2000** ranking.
 
-2. [chicago house price](https://www.kaggle.com/datasets/tawfikelmetwally/chicago-house-price)
+## Dataset
+- **Source** : [House Prices - Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)
+- **Description** : Données de caractéristiques de biens immobiliers, utilisées pour entraîner et évaluer des modèles de régression. / Real estate feature data for training and evaluating regression models.
 
-3. [HOUSE PRICE PREDICTION - SEATTLE](https://www.kaggle.com/datasets/samuelcortinhas/house-price-prediction-seattle)
+## Interface
+Permet aux utilisateurs de saisir les caractéristiques d'une maison pour en prédire le prix.
 
-4. [Boston House Price](https://www.kaggle.com/datasets/vikrishnan/boston-house-prices)
+Allows users to input home features to predict the property's price.
 
-Autre : 
-
-5. [House price prediction - Sydney&Melbourne](https://www.kaggle.com/datasets/shree1992/housedata)
-
-
-## Interface : 
-Permettre aux utilisateurs d'entrer les caractéristiques d'une maison et prédirait son prix
-
-## Langage : 
+## Langage / Language
 **Python**
 
-## Feuille de route:
-[12/11/2024] : Choix du sujet
+## Feuille de Route / Roadmap
+- [12/11/2024] : Choix du sujet / Topic Selection
 
-## Idée
-L'idée est de faire de l'analyse prédictive.
-On pense essayer différentes approches :
-- Régression Linéaire
-- Régression Ridge-Lasso
-- MARS (Structure d'arbre) [Algorithme non vu en cours]
+## Installation
 
-On a différent dataset pour différentes villes, ce qui pourrait nous emmener a réaliser un Bagging.
-De plus, si les approches se trouvent être performantes, nous pourrions réaliser un principe de votes dans nos modèles et donc expérimenter le stacking.
+Clonez le dépôt GitHub et installez les dépendances.
 
-___
+Clone the GitHub repository and install dependencies.
 
-### GitHub ###
-[Accéder au dépôt GitHub](https://github.com/MathisAulagnier/real_estate_prediction/tree/main)
+```bash
+git clone https://github.com/MathisAulagnier/real_estate_prediction.git
+cd real_estate_prediction
+pip install -r requirements.txt
+```
+Utilisation / Usage
+
+Exécutez data_preprocessing.py pour préparer les données, model_training.py pour entraîner le modèle, puis prediction.py pour faire des prédictions.
+
+Run data_preprocessing.py to prepare the data, model_training.py to train the model, and prediction.py to make predictions.
+
+Structure du Projet / Project Structure
+
+- data_preprocessing.py : Prétraitement des données.
+- model_training.py : Entraînement du modèle.
+- prediction.py : Prédiction des prix.
+- data_preprocessing.py: Data preprocessing.
+- model_training.py: Model training.
+- prediction.py: Price prediction.
+
+
