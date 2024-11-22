@@ -153,3 +153,5 @@ def estimate_its_house(lst):
 
 if __name__ == "__main__":
     # estimate_its_house(liste)
+    print("Training...")
+    
