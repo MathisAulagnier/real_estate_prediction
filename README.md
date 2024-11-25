@@ -1,7 +1,7 @@
 # Prédiction des Prix de l'Immobilier / Real Estate Price Prediction
 
 ![Python](https://img.shields.io/badge/language-Python-blue.svg)
-![Kaggle Top 2000](https://img.shields.io/badge/Kaggle%20Rank-Top%202000-lightblue.svg)
+![Kaggle Top 600](https://img.shields.io/badge/Kaggle%20Rank-Top%202000-lightblue.svg)
 ![Status](https://img.shields.io/badge/status-Completed-green.svg)
 ![GitHub repo size](https://img.shields.io/github/repo-size/MathisAulagnier/real_estate_prediction)
 ![Kaggle](https://img.shields.io/badge/dataset-Kaggle-brightgreen)
