@@ -7,9 +7,19 @@
 ![Kaggle](https://img.shields.io/badge/dataset-Kaggle-brightgreen)
 
 ## Description du Projet / Project Description
-Ce projet vise à prédire les prix de vente de biens immobiliers en utilisant des techniques avancées de régression, y compris l'ingénierie des caractéristiques et le gradient boosting. Conçu pour la compétition [House Prices - Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques) sur Kaggle, ce projet m'a permis d'atteindre le **Top 2000** des classements.
+Ce projet vise à prédire les prix de vente de biens immobiliers en utilisant des techniques avancées de régression, y compris l'ingénierie des caractéristiques et le gradient boosting. Conçu pour la compétition [House Prices - Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques) sur Kaggle, ce projet m'a permis d'atteindre le **Top 600** des classements.
 
 This project aims to predict real estate sale prices by applying advanced regression techniques, feature engineering, and gradient boosting. Developed for the [House Prices - Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques) competition on Kaggle, this project helped me achieve a **Top 2000** ranking.
+
+## Captures d'Écran / Screenshots
+
+### Interface Utilisateur / User Interface
+![Interface Utilisateur](images/form.png)
+*Description de l'image : Interface permettant aux utilisateurs de saisir les caractéristiques d'une maison pour en prédire le prix.*
+
+![Prédiction du prix](images/price.png)
+*Description de l'image : Prédiction du prix d'une maison en fonction de ses caractéristiques.*
+
 
 ## Dataset
 - **Source** : [House Prices - Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)
