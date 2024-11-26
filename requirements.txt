@@ -119,12 +119,12 @@ pure_eval==0.2.3
 pycparser==2.22
 Pygments==2.18.0
 pyparsing==3.2.0
-PyQt5==5.15.11
-PyQt5-Qt5==5.15.15
-PyQt5_sip==12.15.0
+# PyQt5==5.15.11
+# PyQt5-Qt5==5.15.15
+# PyQt5_sip==12.15.0
 pyqtgraph==0.13.7
-PyQtWebEngine==5.15.7
-PyQtWebEngine-Qt5==5.15.15
+PyQtWebEngine
+PyQtWebEngine-Qt5
 python-dateutil==2.9.0.post0
 python-json-logger==2.0.7
 python-louvain==0.16
@@ -154,7 +154,7 @@ tenacity==9.0.0
 tensorboard==2.18.0
 tensorboard-data-server==0.7.2
 tensorflow==2.18.0
-tensorflow-io-gcs-filesystem==0.37.1
+tensorflow-io-gcs-filesystem
 termcolor==2.5.0
 terminado==0.18.1
 threadpoolctl==3.5.0
