@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Estimateur de Prix Immobilier</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-image: url('/api/placeholder/800/200');
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Estimateur de Prix Immobilier de Dijon</h1>
+    </header>
+    <form method="POST">
+        <input type="text" name="MSSubClass" placeholder="Type de logement (ex: 20)" required>
+        <input type="text" name="MSZoning" placeholder="Zone (ex: RL)" required>
+        <input type="number" name="LotFrontage" placeholder="Largeur du terrain" required>
+        <input type="number" name="LotArea" placeholder="Surface du terrain" required>
+        <input type="text" name="Street" placeholder="Type de rue (ex: Pave)" required>
+        <input type="text" name="LotShape" placeholder="Forme du terrain" required> 
+        <input type="text" name="LandContour" placeholder="Contour du terrain" required>
+        <input type="text" name="Utilities" placeholder="Services publics" required>
+        <input type="text" name="LotConfig" placeholder="Configuration du terrain" required>
+        <input type="text" name="LandSlope" placeholder="Pente du terrain" required> 
+        <input type="text" name="Neighborhood" placeholder="Quartier" required>
+        <input type="text" name="Condition1" placeholder="Condition proximité 1" required>
+        <input type="text" name="Condition2" placeholder="Condition proximité 2" required>
+        <input type="text" name="BldgType" placeholder="Type de bâtiment" required>
+        <input type="text" name="HouseStyle" placeholder="Style de maison" required>
+        <input type="number" name="OverallQual" placeholder="Qualité globale" required>
+        <input type="number" name="OverallCond" placeholder="Condition globale" required>
+        <input type="number" name="YearBuilt" placeholder="Année de construction" required>
+        <input type="number" name="YearRemodAdd" placeholder="Année de rénovation" required>
+        <input type="text" name="RoofStyle" placeholder="Style de toit" required>
+        <input type="text" name="RoofMatl" placeholder="Matériau de toit" required>
+        <input type="text" name="Exterior1st" placeholder="Matériau extérieur 1" required>
+        <input type="text" name="Exterior2nd" placeholder="Matériau extérieur 2" required>
+        <input type="text" name="MasVnrType" placeholder="Type de revêtement en maçonnerie" required>
+        <input type="number" name="MasVnrArea" placeholder="Surface de revêtement en maçonnerie" required>
+        <input type="text" name="ExterQual" placeholder="Qualité extérieure" required>
+        <input type="text" name="ExterCond" placeholder="Condition extérieure" required>
+        <input type="text" name="Foundation" placeholder="Type de fondation" required>
+        <input type="text" name="BsmtQual" placeholder="Qualité du sous-sol" required>
+        <input type="text" name="BsmtCond" placeholder="Condition du sous-sol" required>
+        <input type="text" name="BsmtExposure" placeholder="Exposition du sous-sol" required>
+        <input type="text" name="BsmtFinType1" placeholder="Type de finition du sous-sol 1" required>
+        <input type="number" name="BsmtFinSF1" placeholder="Surface finie du sous-sol 1" required>
+        <input type="number" name="BsmtFinSF2" placeholder="Surface finie du sous-sol 2" required>
+        <input type="number" name="BsmtUnfSF" placeholder="Surface non finie du sous-sol" required>
+        <input type="number" name="TotalBsmtSF" placeholder="Surface totale du sous-sol" required>
+        <input type="text" name="Heating" placeholder="Type de chauffage" required>
+        <input type="text" name="HeatingQC" placeholder="Qualité du chauffage" required>
+        <input type="text" name="CentralAir" placeholder="Climatisation centrale" required>
+        <input type="text" name="Electrical" placeholder="Système électrique" required>
+        <input type="number" name="1stFlrSF" placeholder="Surface du 1er étage" required>
+        <input type="number" name="2ndFlrSF" placeholder="Surface du 2ème étage" required>
+        <input type="number" name="LowQualFinSF" placeholder="Surface de finition de basse qualité" required>
+        <input type="number" name="GrLivArea" placeholder="Surface habitable au-dessus du sol" required>
+        <input type="number" name="BsmtFullBath" placeholder="Salle de bain complète au sous-sol" required>
+        <input type="number" name="BsmtHalfBath" placeholder="Demi-salle de bain au sous-sol" required>
+        <input type="number" name="FullBath" placeholder="Salle de bain complète" required>
+        <input type="number" name="HalfBath" placeholder="Demi-salle de bain" required>
+        <input type="number" name="BedroomAbvGr" placeholder="Chambres au-dessus du sol" required>
+        <input type="number" name="KitchenAbvGr" placeholder="Cuisines au-dessus du sol" required>
+        <input type="text" name="KitchenQual" placeholder="Qualité de la cuisine" required>
+        <input type="number" name="TotRmsAbvGrd" placeholder="Pièces totales au-dessus du sol" required>
+        <input type="text" name="Functional" placeholder="Fonctionnalité" required>
+        <input type="number" name="Fireplaces" placeholder="Nombre de cheminées" required>
+        <input type="text" name="FireplaceQu" placeholder="Qualité de la cheminée" required>
+        <input type="text" name="GarageType" placeholder="Type de garage" required>
+        <input type="text" name="GarageFinish" placeholder="Finition du garage" required>
+        <input type="number" name="GarageCars" placeholder="Nombre de voitures dans le garage" required>
+        <input type="text" name="GarageQual" placeholder="Qualité du garage" required>
+        <input type="text" name="PavedDrive" placeholder="Allée pavée" required>
+        <input type="number" name="WoodDeckSF" placeholder="Surface de la terrasse en bois" required>
+        <input type="number" name="OpenPorchSF" placeholder="Surface du porche ouvert" required>
+        <input type="number" name="EnclosedPorch" placeholder="Surface du porche fermé" required>
+        <input type="number" name="3SsnPorch" placeholder="Surface du porche trois saisons" required>
+        <input type="number" name="ScreenPorch" placeholder="Surface du porche grillagé" required>
+        <input type="number" name="PoolArea" placeholder="Surface de la piscine" required>
+        <input type="number" name="MiscVal" placeholder="Valeur divers" required>
+        <input type="number" name="MoSold" placeholder="Mois de vente" required>
+        <input type="number" name="YrSold" placeholder="Année de vente" required>
+        <input type="text" name="SaleType" placeholder="Type de vente" required>
+        <input type="text" name="SaleCondition" placeholder="Condition de vente" required>
+
+        <button type="submit">Estimer le Prix</button>
+    </form>
+    <div id="result">
+        {% if price %}
+        Prix estimé : {{ price }}€
+        {% endif %}
+    </div>
+</body>
+</html>
