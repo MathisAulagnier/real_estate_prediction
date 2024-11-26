@@ -30,7 +30,7 @@ export const MSZoning = [
 
 export const Street = [
     { value: "Grvl", label: "Gravel" },
-    { value: "Pave", label: "Paved" }
+    { value: "Pave", label: "Pave" }
 ];
 
 export const LotShape = [

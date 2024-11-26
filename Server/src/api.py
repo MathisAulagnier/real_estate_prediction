@@ -7,10 +7,19 @@ app = Flask(__name__)
 from flask_cors import CORS
 CORS(app)
 
+@app.route('/')
+def home():
+    return "Bienvenue sur l'API de prédiction de prix des maisons. Utilisez la route /predict pour envoyer des données."
+
+
 @app.route('/predict', methods=['POST'])
 def predict_house_price():
     data = request.json
+    print(data['parameters'])
     try:
+        # Validation des données
+        if 'parameters' not in data or not isinstance(data['parameters'], list):
+            return jsonify({'error': 'Invalid input: "parameters" should be a list'}), 400
         model_path = '../Models/voting_regressor_model.pkl'
         # les données sont elles sous la bonne forme ??!
         instance = create_instance(data['parameters'])
