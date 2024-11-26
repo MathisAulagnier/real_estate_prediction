@@ -15,9 +15,11 @@ This project aims to predict real estate sale prices by applying advanced regres
 
 ### Interface Utilisateur / User Interface
 ![Interface Utilisateur](images/form.png)
+
 *Description de l'image : Interface permettant aux utilisateurs de saisir les caractéristiques d'une maison pour en prédire le prix.*
 
 ![Prédiction du prix](images/price.png)
+
 *Description de l'image : Prédiction du prix d'une maison en fonction de ses caractéristiques.*
 
 
