@@ -57,7 +57,9 @@ import {
     UncontrolledTooltip,
     Alert,
     Modal,
-    ModalBody
+    ModalBody,
+    Row,
+    Col
 } from "reactstrap";
 // core components
 import Datetime from 'react-datetime';
@@ -65,6 +67,8 @@ import { FireplaceQu } from "constants/constant";
 
 import ClipLoader from "react-spinners/ClipLoader";
 import Price from "constants/Price";
+import { dataObject } from "constants/data";
+import { dataInput } from "constants/data";
 
 
 function FormComponent() {
@@ -277,8 +281,13 @@ function FormComponent() {
             <UncontrolledTooltip placement="top" target={id} delay={0}>
                 {label}
             </UncontrolledTooltip>
+            {console.log("Dateeeee: ",data[id] )}
             <Datetime
-                inputProps={{ placeholder: id }}
+                value={`${data[id]}`}
+                inputProps={{ 
+                    placeholder: id, 
+                    // disabled: true, 
+                }}
                 dateFormat={format}
                 timeFormat={false}
                 onChange={(e) =>
@@ -354,11 +363,48 @@ function FormComponent() {
                     {/* {predictPrice? Number(predictPrice.toFixed(2)) + " $ " : null} */}
                     {predictPrice ? <Price amount={predictPrice} currency="USD" locale="en-US" /> : null}
                     <br></br>
-                    <br></br>
                   </h4>
                 </div>
             </Card>
             <Card style={{ padding: "3rem", }}>
+                <Container className="text-center" style={{ paddingBottom: "3rem", }}>
+                    <Row className="form-row">
+                        <Col>
+                        <Button 
+                        color="success" 
+                        type="submit" 
+                        onClick={() => {
+                            setLoading(true);
+                            setAlertModal(true)
+                            setSelectedData(dataInput)
+                            setLoading(false);
+                            setAlertModal(false)
+                            console.log(data);
+                        }}
+                        className="col-md-6"
+                    >
+                        Load data
+                    </Button>
+                        </Col>
+                        <Col>
+                        <Button 
+                        color="primary" 
+                        type="submit" 
+                        onClick={() => {
+                            setLoading(true);
+                            setAlertModal(true)
+                            setSelectedData(dataObject)
+                            setLoading(false);
+                            setAlertModal(false)
+                            console.log(data);
+                        }} 
+                        className="col-md-6"
+                    >
+                        Reset input
+                    </Button>
+                        </Col>
+                    </Row>                    
+                </Container>
                 <Form method="post" onSubmit={handleSubmit}>
                     <div className="form-row">
                         {renderSelectField("MSSubClass", "Identifies the type of dwelling involved in the sale", 6, MSSubClass)}
@@ -510,8 +556,6 @@ function FormComponent() {
                         data-testid="loader"
                     />
                 </ModalBody>
-                
-
               </Modal>
         </Container>
     );
