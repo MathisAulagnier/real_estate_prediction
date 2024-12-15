@@ -1,4 +1,4 @@
-# Prédiction des Prix de l'Immobilier / Real Estate Price Prediction
+# 🚀 Prédiction des Prix de l'Immobilier / Real Estate Price Prediction
 
 ![Python](https://img.shields.io/badge/language-Python-blue.svg)
 ![Kaggle Top 600](https://img.shields.io/badge/Kaggle%20Rank-Top%20600-lightblue.svg)
@@ -10,6 +10,14 @@
 Ce projet vise à prédire les prix de vente de biens immobiliers en utilisant des techniques avancées de régression, y compris l'ingénierie des caractéristiques et le gradient boosting. Conçu pour la compétition [House Prices - Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques) sur Kaggle, ce projet m'a permis d'atteindre le **Top 600** des classements.
 
 This project aims to predict real estate sale prices by applying advanced regression techniques, feature engineering, and gradient boosting. Developed for the [House Prices - Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques) competition on Kaggle, this project helped me achieve a **Top 2000** ranking.
+
+**Technologies utilisées :** Python, Machine Learning, Auto-encodeurs, Régression, XGBoost, Flask, ReactJS.  
+**Compétences mises en place :**
+- Nettoyage des données et traitement des valeurs manquantes.
+- Utilisation d'un autoencodeur pour éliminer les anomalies dans le dataset.
+- Application de modèles de régression (Linear Regression, Ridge, Random Forest, XGBoost) et d'algorithmes d'ensemble (Voting Regressor, Stacking Regressor).
+- Développement d'une interface web avec ReactJS et Flask pour interagir avec le modèle prédictif.
+
 
 ## Captures d'Écran / Screenshots
 
